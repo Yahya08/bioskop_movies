@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="header">
+        <div class="logo"> 
+            <img src="images/logo.png" alt="Logo" class="logo-img">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Search</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <section class="welcome-section">
+        <div class="carousel">
+            <div class="carousel-item active" style="background-image: url('https://images.justwatch.com/poster/304926158/s718/season-4.jpg');">
+                <div class="overlay">
+                    <div class="movie-info-container">
+                        <h1>GOTG Vol 3</h1>
+                        <div class="movie-meta">
+                            <span class="rating">⭐ 9.5</span>
+                            <span class="duration">120 mins</span>
+                            <span class="quality">HD</span>
+                            <span class="age">16+</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quas, possimus eius. Deserunt non odit.</p>
+                        <button class="watch-now-btn">▶ WATCH NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('https://images.justwatch.com/poster/304926158/s718/season-4.jpg');">
+                <div class="overlay">
+                    <div class="movie-info-container">
+                        <h1>Deadpool & Wolverine</h1>
+                        <div class="movie-meta">
+                            <span class="rating">⭐ 8.0</span>
+                            <span class="duration">110 mins</span>
+                            <span class="quality">HD</span>
+                            <span class="age">18+</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Possimus eius. Deserunt non odit.</p>
+                        <button class="watch-now-btn">▶ WATCH NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('https://images.justwatch.com/poster/304926158/s718/season-4.jpg');">
+                <div class="overlay">
+                    <div class="movie-info-container">
+                        <h1>Joker: Folie à Deux</h1>
+                        <div class="movie-meta">
+                            <span class="rating">⭐ 9.0</span>
+                            <span class="duration">130 mins</span>
+                            <span class="quality">HD</span>
+                            <span class="age">17+</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quas, possimus eius, incidunt molestias.</p>
+                        <button class="watch-now-btn">▶ WATCH NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow left-arrow">‹</div>
+            <div class="arrow right-arrow">›</div>
+        </div>
+    </section>
+
+    <section class="trending-section">
+        <div class="section-header">
+            <h2>Trending</h2>
+            <div class="toggle">
+                <button class="toggle-btn active" onclick="switchTab('day')">Day</button>
+                <button class="toggle-btn" onclick="switchTab('week')">Week</button>
+            </div>
+        </div>
+
+        <div class="movies-grid day-grid" id="day">
+            <!-- Movie Card 1 -->
+            <div class="movie-card">
+                <img src="https://a.storyblok.com/f/178900/960x1280/f7e1bf7160/tower-of-god-s2-kv3.jpg/m/filters:quality(95)format(webp)" alt="Deadpool & Wolverine">
+                <div class="movie-info">
+                    <h3>Deadpool & Wolverine</h3>
+                    <div class="details">
+                        <span class="rating">7.7</span>
+                        <span class="genre">Action, Comedy</span>
+                    </div>
+                    <span class="release-date">Jul 24, 2024</span>
+                </div>
+            </div>
+            <!-- Movie Card 2 -->
+            <div class="movie-card">
+                <img src="https://images.justwatch.com/poster/304926158/s718/season-4.jpg" alt="Speak No Evil">
+                <div class="movie-info">
+                    <h3>Speak No Evil</h3>
+                    <div class="details">
+                        <span class="rating">7.0</span>
+                        <span class="genre">Horror, Thriller</span>
+                    </div>
+                    <span class="release-date">Sep 11, 2024</span>
+                </div>
+            </div>
+            <!-- Add more movie cards like this as needed -->
+        
+            <div class="movie-card">
+                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/4305090653ee4239dd0d797f1a4a6bdf.jpg" alt="Speak No Evil">
+                <div class="movie-info">
+                    <h3>Speak No Evil</h3>
+                    <div class="details">
+                        <span class="rating">7.0</span>
+                        <span class="genre">Horror, Thriller</span>
+                    </div>
+                    <span class="release-date">Sep 11, 2024</span>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/d8f26328f3d6c1610ade06331f7cd471.jpg" alt="Speak No Evil">
+                <div class="movie-info">
+                    <h3>Speak No Evil</h3>
+                    <div class="details">
+                        <span class="rating">7.0</span>
+                        <span class="genre">Horror, Thriller</span>
+                    </div>
+                    <span class="release-date">Sep 11, 2024</span>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/ebf137866cc45a05c7401148fe1d6d20.jpg" alt="Speak No Evil">
+                <div class="movie-info">
+                    <h3>Speak No Evil</h3>
+                    <div class="details">
+                        <span class="rating">7.0</span>
+                        <span class="genre">Horror, Thriller</span>
+                    </div>
+                    <span class="release-date">Sep 11, 2024</span>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="https://images.justwatch.com/poster/304926158/s718/season-4.jpg" alt="Speak No Evil">
+                <div class="movie-info">
+                    <h3>Speak No Evil</h3>
+                    <div class="details">
+                        <span class="rating">7.0</span>
+                        <span class="genre">Horror, Thriller</span>
+                    </div>
+                    <span class="release-date">Sep 11, 2024</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="movies-grid week-grid" id="week" style="display: none;">
+            <!-- Movie Card 3 -->
+            <div class="movie-card">
+                <img src="images/joker.jpg" alt="Joker: Folie à Deux">
+                <div class="movie-info">
+                    <h3>Joker: Folie à Deux</h3>
+                    <div class="details">
+                        <span class="rating">6.8</span>
+                        <span class="genre">Drama, Crime</span>
+                    </div>
+                    <span class="release-date">Oct 1, 2024</span>
+                </div>
+            </div>
+            <!-- Add more movie cards like this as needed -->
+        </div>
+    </section>
+
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
